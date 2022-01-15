@@ -20,6 +20,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(GeneratePassword(10));
+        Scanner s = new Scanner(System.in);
+        System.out.print("Length (>0): ");
+        int length = s.nextInt();
+        System.out.println(GeneratePassword(length));
     }
 }
