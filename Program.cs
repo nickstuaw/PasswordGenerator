@@ -30,7 +30,9 @@ namespace PasswordGenerator
                 {
                     case 0:
                         // Append a random letter from alphabet, assuming its length is 26.
-                        password += alphabet[r.Next(0, 26)];
+                        // Add a 50% chance for the letter to be uppercase.
+                        password +=
+                            r.Next(0,2) == 1 ? alphabet[r.Next(0, 26)]  : alphabet[r.Next(0, 26)].ToString().ToUpper().ToCharArray()[0];
                         break;
                     case 1:
                         // Append a random digit, assuming there are 10 digits being chosen from
