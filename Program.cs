@@ -5,7 +5,7 @@ namespace PasswordGenerator
     class Program
     {
         // Declare & initiate the debug mode variable.
-        // debug is currently redundant.
+        // debug is currently unused.
         private static bool debug = false;
         // Declare & initiate character arrays that hold the alphabet, digits, and symbols available.
         private static char[]
